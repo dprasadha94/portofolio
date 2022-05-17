@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portofolio | Mohammad Endra Dwi Prasadha</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet" href="public/adminltev3/plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="public/adminltev3/dist/css/adminlte.min.css">
+
+    <script src="public/adminltev3/plugins/jquery/jquery.min.js"></script>
+    <script src="public/adminltev3/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="public/adminltev3/dist/js/adminlte.min.js"></script>
+    <script src="public/adminltev3/plugins/typed/typed.min.js"></script>
+</head>
+
+<style>
+    .navbar {
+        background: rgba(84, 182, 137, 1);
+
+        font-weight: bold;
+    }
+
+    .navbar a {
+        color: white !important;
+    }
+
+    .navbar a:hover {
+        color: rgba(0, 0, 0, 0.5) !important;
+    }
+
+    body {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        /* color: #292929; */
+    }
+
+    .banner {
+        background: -webkit-linear-gradient(-45deg, rgba(84, 182, 137, 1) 0, rgba(100, 182, 84, 0.7) 40%, rgba(41, 182, 0, 0.7) 100%);
+        color: #fff;
+        margin-bottom: 0px;
+    }
+
+    .banner .label span {
+        background: #fff;
+        color: #292929;
+        font-weight: bold;
+        padding: -0px 15px 0px 15px;
+        border-radius: 10px;
+    }
+
+    .ket_about {
+        padding-top: 10px;
+        padding-margin: 10px;
+    }
+
+    .ket_about span {
+        color: #222;
+        font-weight: 500;
+        text-transform: capitalize;
+        display: inline-block;
+        width: 40%;
+    }
+
+    .text-judul {
+        color: #292929;
+        border-left: 5px solid #54B689;
+        padding-left: 20px;
+        font-weight: bold;
+    }
+
+    .text-judul-noborder {
+        color: #292929;
+        font-weight: bold;
+    }
+
+    .text-isi {
+        color: #4f4f4f;
+    }
+
+    .text-isi a {
+        color: #54B689;
+    }
+
+    .text-isi a:hover {
+        color: #54B689;
+        text-decoration: underline;
+    }
+
+    .social-list i {
+        background: #fff;
+        border-radius: 100px;
+        color: #54B689;
+        padding: 10px 25px 10px 10px;
+    }
+
+    .social-list a:hover {
+        opacity: .8
+    }
+</style>
+
+
+<body class="hold-transition layout-top-nav ">
+    <div class="wrapper">
+        <div class="preloader flex-column justify-content-center align-items-center" style="height: 0px;">
+        </div>
+
+        <nav class="main-header navbar navbar-expand-md navbar-light navbar-white border-bottom-0">
+            <div class="container">
+                <a href="/index.html" class="navbar-brand">
+                    <span class="brand-text font-weight-light">
+                        <b style="font-weight: bold;">M.E.D.P</b>
+                    </span>
+                </a>
+
+                <button class="navbar-toggler order-1 collapsed" type="button" data-toggle="collapse"
+                    data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse order-3 collapse" id="navbarCollapse" style="">
+                    <!-- Left navbar links -->
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <i class="fa fa-user"></i> <span> Tentang Saya</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <i class="fa fa-briefcase"></i> <span>Portofolio</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <i class="fa fa-file"></i> <span>Resume</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <i class="fa fa-blog"></i> <span>Blog</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="jumbotron jumbotron-fluid banner">
+            <div class="container">
+                <h1 class="label">
+                    <span>Hello ...</span>
+                </h1>
+                <h1>
+                    <b>I AM</b>
+                    <span id="typed_banner"></span>
+                </h1>
+
+                <h6 class="col-md-6" style="padding: 0px; font-weight:normal !important;">
+                    <i style="color: #fff">
+                        Saya seorang senior programmer website. Dapat bekerja sebagai Front-End, Back-End ataupun
+                        Fullstack
+                        Development
+                    </i>
+
+                    <ul class="social-list list-inline py-2 mx-auto">
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-twitter fa-fw"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-linkedin-in fa-fw"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-github-alt fa-fw"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-facebook fa-fw"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-instagram fa-fw"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </h6>
+
+            </div>
+        </div>
+
+
+        <div class="content-wrapper" style="min-height: 768.816px; padding-top:40px">
+            <!-- Main content -->
+            <div class="content container">
+
+                <div class="col-lg-12">
+                    <h2 class="text-judul">
+                        Tentang Saya
+                    </h2>
+                    <br>
+                    <div class="row">
+                        <h6 class="text-isi col-lg-12">
+                            Saya seorang Web Development dengan pengalaman luas lebih dari 5 tahun.
+                            Keahlian
+                            saya adalah pembuatan dan desain situs web, Full Stack Development, Back-End Development dan
+                            banyak
+                            lagi, ingin tahu lebih banyak tentang pengalaman saya? Lihat <a href="#">resume online</a>
+                            dan
+                            <a href="#">portofolio project</a>.
+                        </h6>
+
+                        <div class="col-lg-12" style="padding:0px;">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="col-sm-12">
+                                        <h6>Nama : <span class="text-secondary">M. Endra D. Prasadha</span></h6>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <h6>Tanggal : <span class="text-secondary">07 Februari 1994
+                                                (28)
+                                            </span></h6>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <h6>Domisi : <span class="text-secondary">Kota Cirebon, Jawa barat</span></h6>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <h6>Pengalaman: <span class="text-secondary">lebih dari 5 tahun</span>
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="col-sm-12">
+                                        <h6>Phone: <span class="text-secondary">+62 8966 7058 0900</span></h6>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <h6>Email: <span class="text-secondary">dprasadha94@gmail.com</span></h6>
+                                    </div>
+
+                                    <div class="col-sm-12">
+                                        <h6>
+                                            Freelance:
+                                            <span class="text-secondary">
+                                                <i class="fa fa-check text-success"></i>
+                                                Available
+                                            </span>
+                                        </h6>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <hr>
+                <br>
+                <div class="col-lg-12">
+                    <h2 class="text-judul">
+                        Keahlian
+                    </h2>
+                    <h6 class="text-isi">
+                        berikut beberapa keahlian saya.
+                    </h6>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h7 class="font-weight-bold">
+                                        <i class="fab fa-html5 me-2 fa-lg" style="color: #DE6E3C"></i>
+                                        <i class="fab fa-css3-alt fa-lg" style="color: #53A7DC"></i>
+                                        HTML & CSS
+                                    </h7>
+                                    <h7 class="font-weight-bold">95%</h7>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 95%; background:#DE6E3C;"
+                                        aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h7 class="font-weight-bold">
+                                        <i class="fab fa-php fa-lg" style="color: #777BAF"></i>
+                                        PHP
+                                    </h7>
+                                    <h7 class="font-weight-bold">90%</h7>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar"
+                                        style="width: 90%;  background:#777BAF;" aria-valuenow="90" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h7 class="font-weight-bold">
+                                        <i class="fa fa-database fa-lg" style="color: #015E8A"></i>
+                                        Mysql
+                                    </h7>
+                                    <h7 class="font-weight-bold">85%</h7>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar"
+                                        style="width: 85%;  background:#015E8A;" aria-valuenow="85" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h7 class="font-weight-bold">
+                                        <i class="fab fa-js fa-lg" style="color: #F0DB4F"></i>
+                                        Javascript & JQuery
+                                    </h7>
+                                    <h7 class="font-weight-bold">70%</h7>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar"
+                                        style="width: 70%;  background:#F0DB4F;" aria-valuenow="70" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-2"> &nbsp;</div>
+                        <div class="col-lg-5">
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h7 class="font-weight-bold">
+                                        <i class="fab fa-laravel fa-lg" style="color: #F34423"></i>
+                                        Framework PHP Laravel & Codeigniter
+                                    </h7>
+                                    <h7 class="font-weight-bold">75%</h7>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%; background:#F34423;"
+                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h7 class="font-weight-bold">
+                                        <i class="fab fa-vuejs fa-lg" style="color: #4EB37F"></i>
+                                        Framework Vue JS
+                                    </h7>
+                                    <h7 class="font-weight-bold">60%</h7>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar"
+                                        style="width: 60%;  background:#4EB37F;" aria-valuenow="60" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h7 class="font-weight-bold">
+                                        <i class="fa fa-flutter fa-lg" style="color: #2FB3EC"></i>
+                                        Flutter
+                                    </h7>
+                                    <h7 class="font-weight-bold">50%</h7>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar"
+                                        style="width: 50%;  background:#2FB3EC;" aria-valuenow="50" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h7 class="font-weight-bold">
+                                        <i class="fab fa-photoshop fa-lg" style="color: #625CD9"></i>
+                                        Coreldraw, Photoshop, Canva
+                                    </h7>
+                                    <h7 class="font-weight-bold">60%</h7>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar"
+                                        style="width: 60%;  background:#625CD9;" aria-valuenow="60" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <hr>
+                <br>
+
+                <div class="col-lg-12">
+                    <h2 class="text-judul">
+                        Latest Blog Posts
+                    </h2>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm">
+                                <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                                    <title>Placeholder</title>
+                                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                                    <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+                                </svg>
+
+                                <div class="card-body">
+                                    <h5>
+                                        <b>Lorem ipsum</b>
+                                    </h5>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                                        eget
+                                        dolor.
+                                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient...
+
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <a class="text-link" style="color:#54B689" href="">
+                                            <h5><b>Read more</b></h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm">
+                                <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                                    <title>Placeholder</title>
+                                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                                    <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+                                </svg>
+
+                                <div class="card-body">
+                                    <h5>
+                                        <b>Lorem ipsum</b>
+                                    </h5>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                                        elit. Aenean commodo ligula
+                                        eget
+                                        dolor.
+                                        Aenean massa. Cum sociis natoque penatibus et magnis dis
+                                        parturient...
+
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <a class="text-link" style="color:#54B689" href="">
+                                            <h5><b>Read more</b></h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm">
+                                <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                                    <title>Placeholder</title>
+                                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                                    <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+                                </svg>
+
+                                <div class="card-body">
+                                    <h5>
+                                        <b>Lorem ipsum</b>
+                                    </h5>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                                        elit. Aenean commodo ligula
+                                        eget
+                                        dolor.
+                                        Aenean massa. Cum sociis natoque penatibus et magnis dis
+                                        parturient...
+
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <a class="text-link" style="color:#54B689" href="">
+                                            <h5><b>Read more</b></h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm">
+                                <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                                    <title>Placeholder</title>
+                                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                                    <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+                                </svg>
+
+                                <div class="card-body">
+                                    <h5>
+                                        <b>Lorem ipsum</b>
+                                    </h5>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                                        elit. Aenean commodo ligula
+                                        eget
+                                        dolor.
+                                        Aenean massa. Cum sociis natoque penatibus et magnis dis
+                                        parturient...
+
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <a class="text-link" style="color:#54B689" href="">
+                                            <h5><b>Read more</b></h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm">
+                                <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                                    <title>Placeholder</title>
+                                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                                    <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+                                </svg>
+
+                                <div class="card-body">
+                                    <h5>
+                                        <b>Lorem ipsum</b>
+                                    </h5>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                                        elit. Aenean commodo ligula
+                                        eget
+                                        dolor.
+                                        Aenean massa. Cum sociis natoque penatibus et magnis dis
+                                        parturient...
+
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <a class="text-link" style="color:#54B689" href="">
+                                            <h5><b>Read more</b></h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm">
+                                <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                                    <title>Placeholder</title>
+                                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                                    <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+                                </svg>
+
+                                <div class="card-body">
+                                    <h5>
+                                        <b>Lorem ipsum</b>
+                                    </h5>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                                        elit. Aenean commodo ligula
+                                        eget
+                                        dolor.
+                                        Aenean massa. Cum sociis natoque penatibus et magnis dis
+                                        parturient...
+
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <a class="text-link" style="color:#54B689" href="">
+                                            <h5><b>Read more</b></h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <footer class="main-footer">
+        <div class="float-right d-none d-sm-inline">
+
+        </div>
+        <b>Copyright © 2021 - 2022
+            <a href="/index.html" style="color:#54B689;">
+
+            </a> .</b>All rights reserved.
+    </footer>
+
+    <script type="text/javascript">
+        var typed_banner = new Typed("#typed_banner", {
+            strings: ["M. Endra D. Prasadha", "Web Development", "PHP Development",
+                "Codeignaiter Programmer",
+                "Laravel Programmer"
+            ],
+            typeSpeed: 60,
+            startDelay: 100,
+            backSpeed: 50,
+            loop: true
+        })
+    </script>
+
+</body>
+
+</html>
